@@ -1,0 +1,189 @@
+.wrapper{
+    width: 1280px;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.container {
+    /*border: 1px solid black;*/
+    display: flex;
+    width: 1280px;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.item {
+    /*border: 1px solid black;*/
+    height: 100%;
+    width: 300px;
+    background-color: #e6ffff;
+    padding-bottom: 30px;
+    letter-spacing: 1.5px;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.item a{
+    text-decoration: underline;
+}
+
+.item a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+h1{
+    /*margin-left: 20px;*/
+    text-align: center;
+}
+
+.item-stretch {
+    flex-grow: 1;
+    background-color:#82b3c9;
+}
+
+.item + .item {
+    margin-left: 2%;
+}
+
+.toilet-details{
+    vertical-align: top;
+    border: 3px solid #81b9bf;
+    text-align: center;
+    width: 85%;
+    margin: 0 auto;
+    border-radius: 25px;
+    box-shadow: 5px 5px #888888;
+    background-color:rgba(255,255,255,0.7);
+    margin-bottom: 25px;
+}
+
+.card-left img{
+    display: block;
+    height: 150px;
+}
+
+.card-left{
+    display: inline-block;
+    border: 1px solid black;
+    vertical-align: top;
+    margin: 21px 10px 10px 20px;
+}
+
+.card-mid{
+    display: inline-block;
+    /*border: 1px solid black;*/
+    vertical-align: top;
+    margin: 10px;
+    margin-left: 20px;
+    padding: 8px;
+    padding-bottom: 20px;
+    width: 290px;
+}
+
+.card-mid img{
+    /*border: 1px solid black;*/
+    height: 45px;
+    padding: 18px;
+    /*margin-top:20px;*/
+}
+
+.card-right img{
+    width: 48px;
+    margin-top: 10px;
+}
+
+.card-right{
+    display: inline-block;
+    /*border: 1px solid black;*/
+    vertical-align: top;
+    margin: 10px;
+    padding: 15px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.padding{
+    display:inline-block;
+    width: 10px;
+    height: 100%;
+}
+
+.toilet-names{
+    width: 520px;
+    font-family: Inter, Source Sans Pro, Helvetica Neue, sans-serif;
+    font-size: 20px;
+    margin: 0 auto 20px;
+}
+
+.toilet-distance{
+    letter-spacing: 2px;
+    width: 520px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 25px;
+    margin: 20px;
+}
+
+.toilet-gender{
+    font-size: 25px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.gender{
+    height: 25px;
+    /*margin:20px;*/
+    /*text-align: center;*/
+}
+
+.toilet-details-button{
+    padding: 10px 50px;
+    margin: 20px;
+    border-radius: 45px;
+    display: inline-block;
+    background-color: #2d2d2d;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.toilet-title{
+    margin-bottom: 10px;
+}
+
+.search-box-div{
+    /*border: 1px solid black;*/
+    text-align: center;
+    margin-top:20px;
+    margin-bottom: 10px;
+    width:1248px;
+}
+
+#search_box{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    height: 50px;
+    width: 300px;
+    background-color: #eceff1;
+}
+
+#searchBtn{
+    cursor: pointer;
+}
+
+#searchBtn:active{
+    background: #cfd8dc;
+    opacity: 0.5;
+}
+
+#note-div{
+    margin-top:25px;
+}
+#note{
+    font-size: 20px;
+    color: #4f9a94;
+}

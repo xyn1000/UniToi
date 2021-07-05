@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UniToi</title>
+    <link href="../css/global.css" rel="stylesheet" type="text/css">
+    <link href="../css/index.css" rel="stylesheet" type="text/css">
+    <link href="../css/footer.css" rel="stylesheet" type="text/css">
+    <link href="../css/header.css" rel="stylesheet" type="text/css">
+    <script src="../js/interceptor.js"></script>
+</head>
+<body>
+
+<header>
+    <button id="overlayCtrl" onclick="openLayer()" type="button">☰</button>
+    <button id="logoutBtn" onclick="logOut()" type="button">Logout</button>
+    <div class="site-nav-overlay">
+        <nav class="nav-content">
+            <h2><span class="decoration">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>UniToi<span
+                    class="decoration">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            </h2>
+            <ul class="nav-categories">
+                <li class="nav-category"><a class="link" href="../html/index.html">Home</a></li>
+                <li class="nav-category"><a class="link" href="../html/admin.html">Admin Panel</a></li>
+                <li class="nav-category"><a class="link" href="../html/Userprofile.html">My Profile</a></li>
+                <li class="nav-category"><a class="link" href="../html/tutorial.html">Helpdesk</a></li>
+                <li class="nav-category"><a class="link" href="../html/Aboutus.html">About Us</a></li>
+            </ul>
+            <hr>
+            <div>
+                <input class="search-box" id="search" type="text">
+                <label class="search-box-label" for="search"><img alt="searchButton" role="button"
+                                                                  src="../img/icon/searchIcon.png" width="30px" onclick="goSearch()"></label>
+            </div>
+        </nav>
+    </div>
+</header>
+
+
+<div class="wrapper">
+
+    <h1 class="title">
+        <span class="span1">UniToi:</span>
+        <span class="span2">Quick.</span>
+        <span class="span3">Accurate.</span>
+        <span class="span4">Private.</span>
+        <span class="span5">Secure.</span>
+    </h1>
+    <hr>
+    <div class="container">
+        <div class="ele toi-map">
+            <div id="map">
+            </div>
+            <h1 class="elementHeader">Toilet Quick Find</h1>
+        </div>
+        <div class="ele toi-rec">
+            <div class="learn-more">Learn More</div>
+            <h1 class="elementHeader">Our Recommendation</h1>
+            <div class="top-rec">
+                <div class="toi-title">
+                    <h2>Fisher Library</h2>
+                    <h2>Distance: <span id="rec-distance">50m</span></h2>
+                </div>
+                <div class="toi-facility">
+                    <img alt="accessibility" width="75px" src="../img/icon/access.png">
+                    <img alt="wifi" width="75px" src="../img/icon/wifi.png">
+                    <img alt="shower" width="75px" src="../img/icon/shower.png">
+                </div>
+            </div>
+            <hr>
+            <div class="toi-rating">
+                <img alt="star" width="48px" src="../img/icon/star.png">
+                <img alt="star" width="48px" src="../img/icon/star.png">
+                <img alt="star" width="48px" src="../img/icon/star.png">
+                <img alt="star" width="48px" src="../img/icon/star.png">
+                <img alt="star" width="48px" src="../img/icon/nostar.png">
+            </div>
+        </div>
+        <div class="ele toi-near">
+            <h1 class="elementHeader">Other Toilets Nearby</h1>
+            <div class="picWall">
+                <ul id="picWallList">
+<!--                    <li><a href="../html/male_toilet1.html?id=1"><img width="144px" src="../img/female_toilet_1.jpg" alt=""></a></li>-->
+<!--                    <li><a href="../html/male_toilet1.html?id=1"><img width="144px" src="../img/female_toilet_2.jpg" alt=""></a></li>-->
+<!--                    <li><a href="../html/male_toilet1.html?id=1"><img width="144px" src="../img/female_toilet_3.jpg" alt=""></a></li>-->
+<!--                    <li><a href="../html/male_toilet1.html?id=1"><img width="144px" src="../img/female_toilet_4.jpg" alt=""></a></li>-->
+<!--                    <li><a href="../html/male_toilet1.html?id=1"><img width="144px" src="../img/male_toilet_1.jpg" alt=""></a></li>-->
+<!--                    <li><a href="../html/male_toilet1.html?id=1"><img width="144px" src="../img/male_toilet_2.jpg" alt=""></a></li>-->
+<!--                    <li><a href="../html/male_toilet1.html?id=1"><img width="144px" src="../img/male_toilet_3.jpg" alt=""></a></li>-->
+<!--                    <li><a href="../html/male_toilet1.html?id=1"><img width="144px" src="../img/male_toilet_4.jpg" alt=""></a></li>-->
+                </ul>
+            </div>
+        </div>
+        <div class="ele user">
+            <h1 class="elementHeader">Contact Us</h1>
+            <div class="input-container">
+                <div>
+                    <div class="contact-input wide-input">
+                        <input id="userName" type="text" required />
+                        <label for="userName">Name</label>
+                    </div>
+                </div>
+                <div>
+                    <div class="contact-input">
+                        <input id="email" type="email" required />
+                        <label for="email">Email</label>
+                    </div>
+                </div>
+                <div>
+                    <div class="contact-input" style="float:right;">
+                        <input id="phoneNum" type="text" required />
+                        <label for="phoneNum">Phone Number</label>
+                    </div>
+                </div>
+                <div>
+                    <div class="contact-input wide-input">
+                        <textarea id="textArea" required></textarea>
+                        <label for="textArea">Message</label>
+                    </div>
+                </div>
+                <div>
+                    <div class="btn-lrg submit-btn" onclick="sendMessage()">Send Message</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="site-footer">
+    <div class="footer-item">
+        <div class="footer-about">
+            <a href="../html/Aboutus.html">
+            <h2 class="footer-title">About Us</h2>
+            <hr>
+            <p> USYD ISYS2110 Tutorial 5 Group 5. </p>
+            </a>
+        </div>
+    </div>
+    <div class="footer-stretch">
+        <div class="footer-link">
+            <h2 class="footer-title">Useful Links</h2>
+            <hr>
+            <ul>
+                <li><a target="_blank" href="../html/privacy_policy.html">Privacy Policy</a></li>
+                <li><a target="_blank" href="../html/site_map.html">Site Map</a></li>
+                <li><a href="#"></a>GitHub</li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="footer-item">
+        <div class="footer-copyright">
+            <h2 class="footer-title"> Copyright</h2>
+            <hr>
+            <p>Copyright © 2021 UniToi. All rights reserved.</p>
+        </div>
+    </div>
+
+</footer>
+
+</body>
+<script src="../js/jquery-3.6.0.js"></script>
+<script type="text/javascript" src="../js/header.js"></script>
+<script src="../js/index.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYDHtKeAAmzAQQxy0vKtE5yGriZZ4mvxk&libraries=&v=weekly"
+        type="text/javascript"></script>
+<script src="../js/header.js"></script>
+<script>
+    function sendMessage(){
+        let name = document.getElementById("userName");
+        let email = document.getElementById("email");
+        let phone=document.getElementById("phoneNum");
+        let message = document.getElementById("textArea");
+
+        let emailFlag = emailValidate(email.value);
+
+        if (email.value.trim() === "" || name.value.trim() === "" || phone.value.trim() ==="" || message.value.trim()===""){
+            alert("Please fill in the form!");
+            return;
+        }
+
+        if (!emailFlag) {
+            alert("Please enter a valid email address!");
+            return;
+        }
+        alert("Thank you for your feedback!")
+        name.value="";
+        email.value="";
+        phone.value="";
+        message.value="";
+    }
+
+    function emailValidate(email){
+        let regex = new RegExp("^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*$");
+        return regex.test(email);
+    }
+</script>
+
+</html>

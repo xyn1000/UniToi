@@ -1,0 +1,66 @@
+.site-footer {
+    display: flex;
+    color: white;
+    text-align: center;
+}
+
+.footer-item {
+    width: 450px;
+    background-color: #314964;
+    height:150px;
+}
+
+.footer-stretch {
+    flex-grow: 1;
+    background-color:#2b2f3c;
+    height:150px;
+}
+
+.item + .item {
+    margin-left: 2%;
+}
+
+.footer-copyright{
+    text-align: center;
+    display: inline-block;
+    padding: 30px;
+}
+
+.footer-title{
+    padding-bottom: 10px;
+}
+
+.footer-link{
+    text-align: center;
+    padding: 30px;
+    padding-bottom:15px;
+}
+
+.footer-about{
+    text-align: center;
+    padding: 30px;
+}
+
+.footer-link ul{
+    list-style: none;
+}
+
+.footer-link ul li{
+    padding: 5px;
+    border-left: 1px solid grey;
+    display: inline-block;
+}
+
+.footer-link a:hover{
+    text-decoration: underline;
+    /*background-color:white;*/
+    /*color:#2b2f3c;*/
+}
+.footer-link ul li:first-child{
+    border-left: 0;
+    display: inline-block;
+}
+
+.footer-about a:hover{
+    text-decoration: underline;
+}

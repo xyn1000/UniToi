@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Panel</title>
+    <link href="../css/global.css" rel="stylesheet" type="text/css">
+    <link href="../css/admin.css" rel="stylesheet" type="text/css">
+    <link href="../css/footer.css" rel="stylesheet" type="text/css">
+    <link href="../css/header.css" rel="stylesheet" type="text/css">
+    <script>
+        if (!sessionStorage.getItem('Role') || sessionStorage.getItem('Role') !== '{Role:ADMIN}'){
+          window.location.href = '../html/admin_login.html';
+        }
+    </script>
+</head>
+<body>
+<header>
+  <button id="overlayCtrl" onclick="openLayer()" type="button">☰</button>
+  <button id="logoutBtn" onclick="logOut()" type="button">Logout</button>
+  <div class="site-nav-overlay">
+    <nav class="nav-content">
+      <h2><span class="decoration">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>UniToi<span
+              class="decoration">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      </h2>
+      <ul class="nav-categories">
+        <li class="nav-category"><a class="link" href="../html/index.html">Home</a></li>
+        <li class="nav-category"><a class="link" href="../html/admin.html">Admin Panel</a></li>
+        <li class="nav-category"><a class="link" href="../html/Userprofile.html">My Profile</a></li>
+        <li class="nav-category"><a class="link" href="../html/tutorial.html">Helpdesk</a></li>
+        <li class="nav-category"><a class="link" href="../html/Aboutus.html">About Us</a></li>
+      </ul>
+      <hr>
+      <div>
+        <input class="search-box" id="search" type="text">
+        <label class="search-box-label" for="search"><img alt="searchButton" role="button"
+                                                          src="../img/icon/searchIcon.png" width="30px" onclick="goSearch()"></label>
+      </div>
+    </nav>
+  </div>
+</header>
+<div id="wrapper">
+  <h1 class="title">
+    <span class="span1">UniToi:</span>
+    <span class="span2">Quick.</span>
+    <span class="span3">Accurate.</span>
+    <span class="span4">Private.</span>
+    <span class="span5">Secure.</span>
+  </h1>
+  <div class="container">
+    <div class="item">
+      <h1>Admin Menu</h1>
+      <hr>
+      <div class="sidebar">
+        <ul>
+          <li id="toiManage-tag"><a href="#">Toilet Manage</a></li>
+          <li id="service-tag"><a href="#">Service Requests</a></li>
+          <li id="password-tag"><a href="#">Change Password</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="item-stretch">
+      <h1>Admin Panel</h1>
+      <hr>
+<!--      CHANGE PASSWORD-->
+      <div class="admin-default">
+        <h3>Welcome, Admin!</h3>
+      </div>
+
+      <div class="admin_credential">
+        <form action="#" id="loginForm" method="post">
+          <table>
+            <tr>
+              <td class="right"><label for="oldPwd" class="inputLabel">Old Password: </label></td>
+              <td><input id="oldPwd" placeholder="Old Password" type="password"/></td>
+            </tr>
+            <tr></tr>
+            <tr>
+              <td class="right"><label for="pwd" class="inputLabel">New Password: </label></td>
+              <td><input id="pwd" placeholder="New Password" type="password"/></td>
+            </tr>
+            <tr></tr>
+
+            <tr>
+              <td class="right"><label for="confirmPwd" class="inputLabel">Confirmation: </label></td>
+              <td><input id="confirmPwd" placeholder="Password" type="password"/></td>
+            </tr>
+          </table>
+          <p id="error"></p>
+          <div><button class="enable pwd-btn" onclick="changePwd()" type="button">Submit</button></div>
+        </form>
+      </div>
+
+<!--      TOILET MANAGEMENT-->
+      <div class="admin_toilet">
+        <table>
+          <thead>
+          <tr>
+            <th>Toilet ID</th>
+            <th>Toilet Name</th>
+            <th>Toilet Place</th>
+            <th>Enable/Disable</th>
+          </tr>
+          </thead>
+          <tbody id="admin_toilet_table">
+          <tr>
+            <td>1</td>
+            <td>Male Toilet 1</td>
+            <td>Fisher Library</td>
+            <td><button type="button" class="enable" onclick="enableBtn(0)" >Enable</button></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Female Toilet 1</td>
+            <td>Regiment Building</td>
+            <td><button type="button" class="disable" onclick="disableBtn(0)">Disable</button></td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+<!--      Service Request-->
+      <div class="service-request">
+        <table>
+          <thead>
+          <tr>
+            <th>Request ID</th>
+            <th>Toilet Name</th>
+            <th>Request Details</th>
+            <th>Handle</th>
+          </tr>
+          </thead>
+          <tbody id="service-request-table">
+          <tr>
+            <td>1</td>
+            <td>Male Toilet 1</td>
+            <td>The washer is not working.</td>
+            <td><button type="button" onclick="handleRequest(0)" class="enable">Handle</button></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Female Toilet 1</td>
+            <td>I cannot reach this toilet.</td>
+            <td><button type="button" onclick="handleRequest(0)" class="enable">Handle</button></td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-item">
+    <div class="footer-about">
+      <h2 class="footer-title">About Us</h2>
+      <hr>
+      <p> USYD ISYS2110 Tutorial 5 Group 5. </p>
+    </div>
+  </div>
+  <div class="footer-stretch">
+    <div class="footer-link">
+      <h2 class="footer-title">Useful Links</h2>
+      <hr>
+      <ul>
+        <li><a target="_blank" href="../html/privacy_policy.html">Privacy Policy</a></li>
+        <li><a target="_blank" href="../html/site_map.html">Site Map</a></li>
+        <li><a href="#">GitHub</a></li>
+      </ul>
+    </div>
+
+  </div>
+  <div class="footer-item">
+    <div class="footer-copyright">
+      <h2 class="footer-title"> Copyright</h2>
+      <hr>
+      <p>Copyright © 2021 UniToi. All rights reserved.</p>
+    </div>
+  </div>
+
+</footer>
+
+<script src="../js/jquery-3.6.0.js"></script>
+<script src="../js/md5.js"></script>
+<script type="text/javascript" src="../js/admin.js"></script>
+<script type="text/javascript" src="../js/header.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>User Profile</title>
+    <link href="../css/global.css" rel="stylesheet">
+    <link href="../css/header.css" rel="stylesheet" type="text/css">
+    <link href="../css/footer.css" rel="stylesheet" type="text/css">
+    <link href="../css/Userprofile.css" rel="stylesheet">
+    <script src="../js/interceptor.js"></script>
+</head>
+<body>
+
+<header>
+    <button id="overlayCtrl" onclick="openLayer()" type="button">☰</button>
+    <button id="logoutBtn" onclick="logOut()" type="button">Logout</button>
+    <div class="site-nav-overlay">
+        <nav class="nav-content">
+            <h2><span class="decoration">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>UniToi<span
+                    class="decoration">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            </h2>
+            <ul class="nav-categories">
+                <li class="nav-category"><a class="link" href="../html/index.html">Home</a></li>
+                <li class="nav-category"><a class="link" href="../html/admin.html">Admin Panel</a></li>
+                <li class="nav-category"><a class="link" href="../html/Userprofile.html">My Profile</a></li>
+                <li class="nav-category"><a class="link" href="../html/tutorial.html">Helpdesk</a></li>
+                <li class="nav-category"><a class="link" href="../html/Aboutus.html">About Us</a></li>
+            </ul>
+            <hr>
+            <div>
+                <input class="search-box" id="search" type="text">
+                <label class="search-box-label" for="search"><img alt="searchButton" role="button"
+                                                                  src="../img/icon/searchIcon.png" width="30px" onclick="goSearch()"></label>
+            </div>
+        </nav>
+    </div>
+</header>
+
+
+
+<div class="wrapper">
+    <h1 class="title">
+        <span class="span1">UniToi:</span>
+        <span class="span2">Quick.</span>
+        <span class="span3">Accurate.</span>
+        <span class="span4">Private.</span>
+        <span class="span5">Secure.</span>
+    </h1>
+    <hr>
+<div class="container">
+    <div id = "title">
+        <label class="coral bold">User Profile</label>
+    </div>
+    <form action="#" id="profileForm" method="post">
+        <table id="table">
+            <tr>
+                <td>
+                    <img alt="Gender" src="../img/icon/gender.png">
+                    <label class="coral bold" id="gender">Gender</label>
+                </td>
+                <td>
+                    <input id="m" name="sex" type="radio" value="M"> <label for="m">Male</label>
+                    <input id="fm" name="sex" type="radio" value="F"> <label for="fm">Female</label>
+                    <input id="sex" name="sex" type="radio" value="U"> <label for="sex">Unisex</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img alt="Accessibility" src="../img/icon/access.png">
+                    <label class="coral bold" id="accessibility">Accessibility</label>
+                </td>
+                <td>
+                    <input id="dis" name="dis" type="radio" value="true"> <label for="dis">Yes</label>
+                    <input id="un" name="dis" type="radio" value="false"> <label for="un">No</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img alt="preference" src="../img/icon/wifi.png">
+                    <label class="coral bold">Preference</label>
+                </td>
+                <td>
+                    <input id="wifi-box" name="wifi" type="checkbox">
+                    <label for="wifi-box">WI-FI</label>
+                    <input id="shower-box" name="shower" type="checkbox">
+                    <label for="shower-box">Shower</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="privacy">
+                    <a class="coral" href="privacy_policy.html" target="_blank"><span class="bold "> Privacy Policy</span></a>
+                </td>
+                <td>
+                    <input id="agree" name="agr" type="checkbox">
+                    <label id="agree-label" for="agree">I have read and agree with the policy.</label>
+                </td>
+            </tr>
+        </table>
+        <div id="button-div">
+            <button class="button" onclick="submitProfile()" type="button">Submit</button>
+        </div>
+    </form>
+</div>
+</div>
+<footer class="site-footer">
+    <div class="footer-item">
+        <div class="footer-about">
+            <h2 class="footer-title">About Us</h2>
+            <hr>
+            <p> USYD ISYS2110 Tutorial 5 Group 5. </p>
+
+        </div>
+    </div>
+    <div class="footer-stretch">
+        <div class="footer-link">
+            <h2 class="footer-title">Useful Links</h2>
+            <hr>
+            <ul>
+                <li><a href="privacy_policy.html" target="_blank">Privacy Policy</a></li>
+                <li><a target="_blank" href="../html/site_map.html">Site Map</a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="footer-item">
+        <div class="footer-copyright">
+            <h2 class="footer-title"> Copyright</h2>
+            <hr>
+            <p>Copyright © 2021 UniToi. All rights reserved.</p>
+        </div>
+    </div>
+
+</footer>
+<script src="../js/jquery-3.6.0.js"></script>
+<script src="../js/user_profile.js"></script>
+<script src="../js/header.js"></script>
+</body>
+</html>

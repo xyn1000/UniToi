@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Toilet Details</title>
+    <link href="../css/global.css" rel="stylesheet" type="text/css">
+    <link href="../css/toilet_details.css" rel="stylesheet" type="text/css">
+    <link href="../css/footer.css" rel="stylesheet" type="text/css">
+    <link href="../css/header.css" rel="stylesheet" type="text/css">
+    <script src="../js/interceptor.js"></script>
+    <style type="text/css">
+
+        h1{margin-bottom:15px; height:100px; line-height:100px; text-align:center; font-size:24px; color:#ef7300;}
+        h5{margin-bottom:10px; height: 20px; line-height:20px;font-size:20px;color:#1f4954; font-family: Cambria, Cochin, Georgia, Times, ‘Times New Roman’, serif;}
+
+        #content #post,#comment p{zoom:1;}
+        #content #post:after,#comment p:after{display:block; height:0; clear:both; visibility:hidden; overflow:hidden; content:'.';}
+        .transition{-webkit-transition:all 0.5s linear; -moz-transition:all 0.5s linear; -o-transition:all 0.5s linear; -ms-transition:all 0.5s linear; transition:all 0.5s linear;}
+        #content{margin:0 auto; width:960px; overflow:auto;}
+        #content #post{margin-bottom:15px; padding-bottom:15px; border-bottom:1px #d4d4d4 dashed;height: 250px;}
+        #content #post textarea{display:block; margin-bottom:10px; padding:5px; width:948px; height:100px; border:1px #d1d1d1 solid; border-radius:5px; resize:none; outline:none;}
+        #content #post textarea:hover{border:1px #9bdf70 solid; background:#f0fbeb;}
+
+        #comment p{margin-bottom:10px; padding:10px; border-radius:5px;}
+        #comment p:nth-child(even){border:1px solid #adcd3c; background:#f2fddb;}
+        #comment p span{display:inline; float:left;}
+
+
+
+    </style>
+    <style type="text/css">
+        .button {
+            background-color: #bbb;
+            padding: .5em;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 6px;
+            color: #fff;
+            font-family: 'Oswald';
+            font-size: 20px;
+            text-decoration: none;
+            border: none;
+        }
+
+        .button:hover {
+            border: none;
+            background: orange;
+            box-shadow: 0px 0px 1px #777;
+        }
+
+        .fl {
+            float: left;
+            font-family: 'Oswald';
+            color: #ef7300;
+            font-size: 20px;
+        }
+
+        #box a {
+            float: left;
+            padding-right: 5px;
+            width: 20px;
+            height: 22px;
+        }
+
+        .bg {
+            background: url("../img/comment/stars.gif") no-repeat;
+        }
+
+        .bg1 {
+            background: url("../img/comment/stars-half.gif") no-repeat;
+        }
+
+        .bg2 {
+            background: url("../img/comment/stars-all.gif") no-repeat;
+        }
+
+        #box .recom {
+            margin-right: 5px;
+            float: left;
+            color: #ef7300;
+        }
+
+        #box .text {
+            margin-right: 5px;
+            margin-top: -10px;
+            display: inline-block;
+            width: 240px;
+            height: 40px;
+
+        }
+    </style>
+</head>
+<body>
+<header>
+    <button id="overlayCtrl" onclick="openLayer()" type="button">☰</button>
+    <button id="logoutBtn" onclick="logOut()" type="button">Logout</button>
+    <button id="serviceBtn" onclick="serviceRequest()" type="button" >Repair</button>
+    <div class="site-nav-overlay">
+        <nav class="nav-content">
+            <h2><span class="decoration">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>UniToi<span
+                    class="decoration">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            </h2>
+            <ul class="nav-categories">
+                <li class="nav-category"><a class="link" href="../html/index.html">Home</a></li>
+                <li class="nav-category"><a class="link" href="../html/admin.html">Admin Panel</a></li>
+                <li class="nav-category"><a class="link" href="../html/Userprofile.html">My Profile</a></li>
+                <li class="nav-category"><a class="link" href="../html/tutorial.html">Helpdesk</a></li>
+                <li class="nav-category"><a class="link" href="../html/Aboutus.html">About Us</a></li>
+            </ul>
+            <hr>
+            <div>
+                <input class="search-box" id="search" type="text">
+                <label class="search-box-label" for="search"><img alt="searchButton" role="button" src="../img/icon/searchIcon.png" width="30px" onclick="goSearch()"></label>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<div class="wrapper">
+    <h1 class="title">
+        <span class="span1">UniToi:</span>
+        <span class="span2">Quick.</span>
+        <span class="span3">Accurate.</span>
+        <span class="span4">Private.</span>
+        <span class="span5">Secure.</span>
+    </h1>
+    <div id="map-show">
+    <div id="map"></div>
+    <div><button id="backBtn" onclick="goBack()" type="button">Go Back</button></div>
+    </div>
+    <div class="container">
+        <div class="element">
+            <h1 id="Title"></h1>
+            <div style="text-align:center">
+                <img id="gender" onerror="this.style.display='none'" height="75px" width="75px" >
+            </div>
+            <div class="description">
+                <h5>Description</h5>
+                <div id="Description"></div>
+            </div>
+            <hr>
+            <div class="Facilities">
+                <h5>Facilities</h5>
+                <img id="accessible" onerror="this.style.display='none'">
+                <img id="wifi" onerror="this.style.display='none'">
+                <img id="shower" onerror="this.style.display='none'">
+            </div>
+            <hr>
+            <div class="Buttons">
+                <button class="button" onclick="showMap()">Direction</button>
+            </div>
+        </div>
+        <div class="element" style="text-align:center">
+            <div class="photos">
+                <h5>Photos of the toilet</h5>
+                <div class="image">
+                    <img alt="photo of the toilet" id="Photo" src="" height="60%" width="60%"/>
+                </div>
+            </div>
+        </div>
+        <div class="element element-wide">
+            <div class="comment">
+                <div id="content">
+                    <div id="post">
+                        <div style="height:30px; color:coral ;font-weight: bold; font-size: 24px;font-family:  Cambria, Cochin, Georgia, Times, ‘Times New Roman’, serif">
+                            Please Leave Your Comments For This Toilet, Thank you.
+                        </div>
+                        <div>
+                            <textarea class="transition"></textarea>
+                        </div>
+                        <div id="box">
+                            <span class="fl">Your satisfaction: &nbsp;</span>
+                            <a class="bg" href="javascript:void(0);"></a>
+                            <a class="bg" href="javascript:void(0);"></a>
+                            <a class="bg" href="javascript:void(0);"></a>
+                            <a class="bg" href="javascript:void(0);"></a>
+                            <a class="bg" href="javascript:void(0);"></a>
+                            <span class="recom fl"></span>
+                            <span class="text fl"></span>
+                        </div>
+                        <br>
+                        <br>
+                        <input id="postBt" style="border:none; background-color:#3EADC5; color:white;border-radius:5px; width:80px; height:30px;" type="button" value="Post"/>
+                    </div>
+                    <div id="comment"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="site-footer">
+    <div class="footer-item">
+        <div class="footer-about">
+            <h2 class="footer-title">About Us</h2>
+            <hr>
+            <p> USYD ISYS2110 Tutorial 5 Group 5. </p>
+
+        </div>
+    </div>
+    <div class="footer-stretch">
+        <div class="footer-link">
+            <h2 class="footer-title">Useful Links</h2>
+            <hr>
+            <ul>
+                <li><a href="privacy_policy.html" target="_blank">Privacy Policy</a></li>
+                <li><a href="privacy_policy.html" target="_blank">Site Map</a></li>
+                <li><a href="Site Map">GitHub</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="footer-item">
+        <div class="footer-copyright">
+            <h2 class="footer-title"> Copyright</h2>
+            <hr>
+            <p>Copyright © 2021 UniToi. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+<script src="../js/jquery-3.6.0.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYDHtKeAAmzAQQxy0vKtE5yGriZZ4mvxk&libraries=&v=weekly"
+        type="text/javascript"></script>
+<script type="text/javascript" src="../js/header.js"></script>
+<script type="text/javascript" src="../js/toilet_detail.js"></script>
+
+</body>
+</html>

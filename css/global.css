@@ -1,0 +1,13 @@
+html, div, span, object, iframe, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, del, em, img, small, strong, ol, ul, li, label, table{
+    border:0;
+    vertical-align:baseline;
+    margin:0;
+    padding:0;
+    font-family: Inter,Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+}
+
+a, a:hover{
+    text-decoration: none;
+    color:inherit;
+}
+

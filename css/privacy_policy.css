@@ -1,0 +1,23 @@
+#wrapper{
+    width: 1280px;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 40px;
+    line-height: 30px;
+}
+
+h1,h2,h3,h4{
+    margin: 20px;
+    margin-left: 0;
+}
+
+a{
+    text-decoration: underline;
+    color: #3EADC5;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: #007bff;
+}

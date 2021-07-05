@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link href="../css/admin_login.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="wrapper" class="center">
+    <h1>Login</h1>
+
+    <div class="userAvatar">
+        <img width="180px" height="180px" src="../img/adminUser.png" alt="admin">
+    </div>
+
+    <form action="#" id="loginForm" method="post">
+        <table>
+            <tr>
+                <td><label for="email">Email: </label></td>
+                <td><input id="email" placeholder="Email" type="email"/></td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td><label for="pwd">Password: </label></td>
+                <td><input id="pwd" placeholder="Password" type="password"/></td>
+            </tr>
+        </table>
+        <p id="error"></p>
+        <div><button class="button" onclick="logIn()" type="button">Submit</button></div>
+    </form>
+
+    <div class="signUp">
+        <a href="register.html">Sign up!</a>
+        <a href="admin_login.html">Admin Login</a>
+    </div>
+
+</div>
+
+<script src="../js/jquery-3.6.0.js"></script>
+<script src="../js/md5.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYDHtKeAAmzAQQxy0vKtE5yGriZZ4mvxk&libraries=places"></script>
+<script src="../js/login.js"></script>
+</body>
+</html>

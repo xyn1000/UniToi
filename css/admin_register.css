@@ -1,0 +1,81 @@
+table{
+    /*border: 1px solid gray;*/
+    width: 350px;
+    margin: 15px 15px;
+}
+
+
+td {
+    font-size: 20px;
+}
+
+body{
+    /*background: url("../img/usyd.jpeg");*/
+    background-color: #b2dfdb;
+    color: #263238;
+}
+
+.center{
+    text-align:center;
+    width: 390px;
+    margin: 80px auto 0;
+    /*background:rgba(245,245,245,0.5);*/
+    background-color: #e0f2f1;
+}
+
+.button{
+    background-color: #64d8cb;
+    color: white;
+    padding: 15px 30px;
+    margin: 6px 6px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    border-radius: 12px;
+}
+
+input{
+    height: 30px;
+    font-size: 15px;
+    width: 180px;
+    line-height: 50px;
+    outline: none;
+    border: none;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.button:hover{
+    background-color: #1f4954;
+}
+
+#error{
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: red;
+}
+
+.right{
+    text-align: right;
+}
+
+.inputLabel {
+    color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+}
+
+#wrapper h1{
+    padding-top: 20px;
+}
+
+.signUp{
+    padding: 0 30px 12px;
+    padding-bottom: 20px;
+    margin: 1px 1px 10px;
+}
+
+
+a:link {color:#439889;}
+a:visited {color:#439889;}
+/*a:hover {color:#b2fef7;}*/
+a:active {color:#82e9de;}

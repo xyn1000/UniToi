@@ -1,0 +1,87 @@
+.wrapper {
+
+    max-width: 100%;
+    overflow: hidden;
+    width: 1280px;
+    padding: 40px
+}
+
+.element{
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 100px auto 0;
+}
+
+.element-left {
+    width: 50%;
+    height: 400px;
+    background: #314964;
+}
+
+.element-right {
+    width: 50%;
+    height: 400px;
+}
+
+a, a:hover {
+    color: inherit
+}
+
+.section-header {
+    font-size: 155px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    text-align: left;
+    position: relative;
+    line-height: 0.6em;
+    pointer-events: none;
+    z-index: 30;
+    float: left;
+}
+
+.email-header {
+    padding: 15px;
+    text-decoration: none;
+    margin-top: 25px;
+    max-width: 400px;
+    margin-left: 0;
+    margin-bottom: 30px;
+    display: block;
+    font-size: 42px;
+    color: rgba(255,255,255,0.7);
+}
+
+.email-header:hover {
+    text-decoration: underline;
+    color:white;
+}
+
+.item-text {
+    margin: 0 auto 60px;
+    width: 80%;
+    z-index: 10;
+    max-width: 70%;
+    color: rgba(255,255,255,0.7);
+}
+
+.item-text a{
+    text-decoration: underline;
+}
+
+.item-text a:hover{
+    color:white;
+}
+
+.contact-info {
+    display: inline-block;
+}
+
+.contact-picture {
+    height:400px;
+}
+
+.contact-picture img {
+    height:400px;
+}

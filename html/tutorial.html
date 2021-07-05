@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>How to use the website</title>
+    <link href="../css/global.css" rel="stylesheet" type="text/css">
+    <link href="../css/footer.css" rel="stylesheet" type="text/css">
+    <link href="../css/header.css" rel="stylesheet" type="text/css">
+    <script src="../js/interceptor.js"></script>
+    <style type="text/css">
+
+        h1{margin-bottom:15px; height:100px; line-height:100px; text-align:center; font-size:24px; color:#ef7300;}
+        h5{margin-bottom:10px; height: 20px; line-height:20px;font-size:20px;color:#1f4954; font-family: Cambria, Cochin, Georgia, Times, ‘Times New Roman’, serif;}
+
+    </style>
+    <style>
+        body{ margin:0; padding-left:200px;}
+        h3{margin-bottom:15px; height:100px; line-height:100px; text-align:left; font-size:30px; color:#ef7300;}
+        .main{ width:100%; height:auto;}
+        .main div{ width:800px;}
+        .left_part {
+            float: left;
+            width: 50%;
+            height: 500px;
+            background-color: white;
+            text-align:left
+        }
+        .right_part{
+            background-color: white;
+            margin-left:200px;
+            height: 500px;
+        }
+        li{margin-top:10px;
+
+        }
+
+
+        #float01{ height:750px;; background:#FFFFFF}
+        #float02{ height:750px; background:#FFFFFF}
+        #float03{ background:#FFFFFF}
+        #float04{ height:1300px; background:#FFFFFF}
+        #float05{ height:700px;; background:#FFFFFF}
+        #float06{ height:1100px;; background:#FFFFFF}
+
+        div.floatCtro{ width:60px; height:350px; position: fixed; left:25px; top:10%; z-index:100}
+        div.floatCtro p{width:150px; text-align:center; height:40px; line-height:40px; font-family:'Times New Roman'; font-size:14px; color:#b2dfdb; margin:0; padding:0; cursor:pointer; background:#1f4954;}
+        div.floatCtro a{ display:inline-block; display:none; width:150px; height:30px; margin:10px 0 0 0; background:#ef7300; color:#000044;  vertical-align:middle; cursor:pointer;}
+        div.floatCtro a span{ text-align:center; width:28px; height:44px; line-height:22px;  font-family:'Times New Roman'; font-size:14px; line-height:22px; text-align:center; margin:20px }
+        div.floatCtro a:hover{ background:#000; color:#fff; zoom:1;}
+        div.floatCtro p:hover{ background:#c40000; color:#fff;}
+        div.floatCtro p.cur{ background:#c40000; color:#fff;}
+    </style>
+</head>
+<body>
+<header>
+    <button id="overlayCtrl" onclick="openLayer()" type="button">☰</button>
+    <div class="site-nav-overlay">
+        <nav class="nav-content">
+            <h2><span class="decoration">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>UniToi<span
+                    class="decoration">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            </h2>
+            <ul class="nav-categories">
+                <li class="nav-category"><a class="link" href="../html/index.html">Home</a></li>
+                <li class="nav-category"><a class="link" href="../html/admin.html">Admin Panel</a></li>
+                <li class="nav-category"><a class="link" href="../html/Userprofile.html">My Profile</a></li>
+                <li class="nav-category"><a class="link" href="../html/tutorial.html">Helpdesk</a></li>
+                <li class="nav-category"><a class="link" href="../html/Aboutus.html">About Us</a></li>
+            </ul>
+            <hr>
+            <div>
+                <input class="search-box" id="search" type="text">
+                <label class="search-box-label" for="search"><img alt="searchButton" role="button" src="../img/icon/searchIcon.png" width="30px" onclick="goSearch()"></label>
+            </div>
+        </nav>
+    </div>
+</header>
+<div class = "wrapper">
+    <h1 class="title">
+        <span class="span1">UniToi:</span>
+        <span class="span2">Quick.</span>
+        <span class="span3">Accurate.</span>
+        <span class="span4">Private.</span>
+        <span class="span5">Secure.</span>
+    </h1>
+</div>
+<h3>How to use the website</h3>
+<hr>
+<div class="main" >
+    <h2 style="color:saddlebrown">Login and Sign up</h2>
+    <div id="float01" class="cur">
+        <div class="left_part">
+            <img src="../img/tutorial/Login.png" height="300px" width="550px">
+            <br>
+            <img src="../img/tutorial/Sign-Up.png" height="300px" width="550px">
+        </div>
+        <div class="right_part">
+            <h6 style="color:black; font-size: 20px">Login and Sign up</h6>
+            <ul >
+                <li>Enter your email and password</li>
+                <li>Click Submit to login</li>
+                <li>If you haven't signed up already, please sign up first</li>
+                <li>Enter valid information to create your account</li>
+                <li>After signing up, you can successfully login to the system</li>
+
+
+            </ul>
+
+        </div>
+
+    </div>
+    <hr>
+    <h2 style="color:sandybrown">Admin Login and Control panel</h2>
+    <div id="float02">
+
+        <div class="left_part">
+            <img src="../img/tutorial/Administrator-Login.png" height="300px" width="550px">
+            <img src="../img/tutorial/Admin-Panel.png" height="300px" width="550px">
+
+        </div>
+        <div class="right_part">
+            <h6 style="color:black; font-size: 20px">Admin Login</h6>
+            <ul>
+                <li>You will be given the admin account and password to log in to the system as Admin</li>
+                <li>Admin can manage the toilets(disable it and no longer can be found by user)</li>
+                <li>Manage Service Request</li>
+                <li>The admin can also manage the comments under each toilet</li>
+            </ul>
+
+        </div>
+
+    </div>
+    <hr>
+    <h2 style="color:brown">User Profile</h2>
+    <div id="float03">
+        <div class="left_part">
+            <img src="../img/tutorial/User-Profile.png" height="360px" width="540px">
+
+
+        </div>
+        <div class="right_part">
+            <h6 style="color:black; font-size: 20px">User Profile</h6>
+            <ul >
+                <li>When you log in to the system as a normal user, you will be asked to leave your current direction</li>
+                <li>You will also need to choose your performance for the toilet</li>
+                <li>The system will help you to find the most close and suitable toilet for you</li>
+            </ul>
+
+        </div>
+    </div>
+    <hr>
+    <h2 style="color:indianred">Index and Navigation</h2>
+    <div id="float04">
+        <div class="left_part">
+            <img src="../img/tutorial/UniToi.png" height="880px" width="540px">
+            <img src="../img/tutorial/navigation.png" height="400px" width="700px">
+        </div>
+        <div class="right_part">
+            <h6 style="color:black; font-size: 20px">Index and Navigation</h6>
+            <ul >
+                <li>After finishing the profile setting, you will be recommended the nearest and most suitable toilet with direction</li>
+                <li>You can also choose other nearby toilets instead of the recommended one</li>
+                <li>You can leave your comments for our website through the "Contact Us" Part</li>
+                <li>The navigation button is on the top left of each page, you can jump to other pages conveniently.</li>
+                <li>You can search toilets through the Search Bar</li>
+
+            </ul>
+
+        </div>
+    </div>
+    <hr>
+    <h2 style="color:greenyellow">Search Result</h2>
+    <div id="float05">
+        <div class="left_part">
+            <img src="../img/tutorial/Search-Result.png" height="660px" width="540px">
+        </div>
+        <div class="right_part">
+            <h6 style="color:black; font-size: 20px">Search Result</h6>
+            <ul >
+                <li>This page will show all the results that meet the criteria</li>
+                <li>You can change the distance and facilities for the results</li>
+                <li>You can checkout each toilet to get the detailed information</li>
+            </ul>
+
+        </div>
+
+    </div>
+    <hr>
+    <h2 style="color:rebeccapurple">Toilet Details</h2>
+    <div id="float06">
+        <div class="left_part">
+            <img src="../img/tutorial/Toilet-Details.png" height="660px" width="540px">
+            <img src="../img/tutorial/Toilet-Details%20(1).png" height="360px" width="540px">
+
+        </div>
+        <div class="right_part">
+            <h6 style="color:black; font-size: 20px">Toilet Details</h6>
+            <ul>
+                <li>This page shows the detailed information for the toilet, including the facilities, photos, description and comments</li>
+                <li>You can request a repair for the toilet through the "Repair" button, then the admin can receive the request and disable the toilet</li>
+                <li>You can leave comments and rate for this toilet, you can also see other's comments and ratings</li>
+                <li>If you wanna go to this toilet, you can click the "Direction" button to get the direction of this toilet</li>
+                <li>The "Go Back" button will bring you back to the toilet detail page</li>
+            </ul>
+
+        </div>
+
+    </div>
+    <hr>
+
+    <h2 style="color:darkblue">FAQ</h2>
+    <div id="float07">
+        <ul >
+            <li>Allowed – What is allowed in the solids bucket?<br>In principle, only the solid waste, litter material and recyclable toilet paper should be added to the solids bucket. If you are considering composting, then food leftovers (e.g. coffee grounds) could also be added to it.</li>
+            <li>Bags – Which bags are suitable for the solids bucket?<br>
+                Even if you are considering composting, it is recommended to use compostable sanitary bags or pouches made of strong paper for bio waste. When buying bags, look for the EU standard DIN EN 13432 symbol. And if you want to be on the safe side, request a datasheet for the bags from the manufacturer.</li>
+            <li>Diarrhea – Can I still use my dry composting toilet?<br>
+                Yes, definitely! If you have a diarrheal disease, then it is recommended to add more litter, so that the additional accumulating fluid can be bound. However, composting of the solids should be avoided when you are ill.
+
+            </li>
+        </ul>
+    </div>
+    <hr>
+
+    <div class="floatCtro">
+        <p>Login and Sign up</p>
+        <p>Admin Login and Control</p>
+        <p>User Profile</p>
+        <p>Index and Navigation</p>
+        <p>Search Result</p>
+        <p>Toilet Details</p>
+        <p>FAQ</p>
+        <a style="text-align:center;">
+            <span>Back to the top</span>
+        </a>
+    </div>
+</div>
+<footer class="site-footer">
+    <div class="footer-item">
+        <div class="footer-about">
+            <h2 class="footer-title">About Us</h2>
+            <hr>
+            <p> USYD ISYS2110 Tutorial 5 Group 5. </p>
+
+        </div>
+    </div>
+    <div class="footer-stretch">
+        <div class="footer-link">
+            <h2 class="footer-title">Useful Links</h2>
+            <hr>
+            <ul>
+                <li><a href="privacy_policy.html" target="_blank">Privacy Policy</a></li>
+                <li><a target="_blank" href="../html/site_map.html">Site Map</a></li>
+                <li><a href="Site Map"></a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="footer-item">
+        <div class="footer-copyright">
+            <h2 class="footer-title"> Copyright</h2>
+            <hr>
+            <p>Copyright © 2021 UniToi. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+<script src="../js/jquery-3.6.0.js"></script>
+<script>
+    $(function(){
+        var AllHet = $(window).height();
+        var mainHet= $('.floatCtro').height();
+        var fixedTop = (AllHet - mainHet)/2
+        //  $('div.floatCtro').css({top:fixedTop+'px'});
+        $('div.floatCtro p').click(function(){
+            var ind = $('div.floatCtro p').index(this)+1;
+            var topVal = $('#float0'+ind).offset().top;
+            $('body,html').animate({scrollTop:topVal},1000)
+        })
+        $('div.floatCtro a').click(function(){
+            $('body,html').animate({scrollTop:0},1000)
+        })
+        $(window).scroll(scrolls)
+        scrolls()
+        function scrolls(){
+            var fl,f2,f3,f4,f5,f6,f7,f8, bck;
+            var fixRight = $('div.floatCtro p');
+            var blackTop = $('div.floatCtro a')
+            var sTop = $(window).scrollTop();
+            fl = $('#float01').offset().top;
+            f2 = $('#float02').offset().top;
+            f3 = $('#float03').offset().top;
+            f4 = $('#float04').offset().top;
+            f5 = $('#float05').offset().top;
+            f6 = $('#float06').offset().top;
+
+
+
+
+            if(sTop<=f2-100){
+                blackTop.fadeOut(300).css('display','none')
+            }
+            else{
+                blackTop.fadeIn(300).css('display','block')
+            }
+
+            if(sTop>=fl){
+                fixRight.eq(0).addClass('cur').siblings().removeClass('cur');
+            }
+            if(sTop>=f2-100){
+                fixRight.eq(1).addClass('cur').siblings().removeClass('cur');
+            }
+            if(sTop>=f3-100){
+                fixRight.eq(2).addClass('cur').siblings().removeClass('cur');
+            }
+            if(sTop>=f4-100){
+                fixRight.eq(3).addClass('cur').siblings().removeClass('cur');
+            }
+            if(sTop>=f5-100){
+                fixRight.eq(4).addClass('cur').siblings().removeClass('cur');
+            }
+            if(sTop>=f6-100){
+                fixRight.eq(5).addClass('cur').siblings().removeClass('cur');
+            }
+
+
+        }
+    })
+</script>
+
+<script src="../js/jquery-3.6.0.js"></script>
+<script type="text/javascript" src="../js/header.js"></script>
+</body>
+</html>

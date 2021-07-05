@@ -1,0 +1,71 @@
+table{
+    /*border: 1px solid black;*/
+    width: 300px;
+    margin: 15px 15px;
+}
+
+
+td {
+    font-size: 20px;
+}
+
+body{
+    /*background: url("../img/usyd2.jpeg");*/
+    background-color: #82b3c9;
+    color: #263238;
+}
+
+.center{
+    text-align:center;
+    width: 330px;
+    margin: 80px auto 0;
+    background:rgba(245,245,245,0.7);
+}
+
+.button{
+    background-color: #64d8cb;
+    color: white;
+    padding: 15px 30px 10px;
+    margin: 6px 6px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    border-radius: 12px;
+}
+
+#error{
+    color: red;
+}
+
+input{
+    height: 30px;
+    font-size: 15px;
+    width: 180px;
+    line-height: 50px;
+    outline: none;
+    border: none;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.button:hover{
+    background-color: #1f4954;
+}
+
+#wrapper h1{
+    padding-top: 20px;
+}
+
+a{
+    display: block;
+}
+
+.signUp{
+    padding: 0 30px 12px;
+    padding-bottom: 20px;
+    margin: 1px 1px 10px;
+}
+
+a:link {color:#439889;}
+a:visited {color:#439889;}
+a:hover {color:#b2fef7;}
+a:active {color:#82e9de;}

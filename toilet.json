@@ -1,0 +1,210 @@
+[
+  {
+    "id": 1,
+    "title": "Fisher library Toilet",
+    "description": "This toilet was a natural space, clean made friendly by the ferns and other water-loving foliage.",
+    "image": "../img/male_toilet_1.jpg",
+    "accessibility":true,
+    "wifi":true,
+    "shower":true,
+    "longitude": "151.19043",
+    "latitude": "-33.88655",
+    "disabled": false,
+    "gender": "U",
+    "reviews": [
+      {
+        "rating": 2,
+        "comment": "dissatisfied"
+      },
+      {
+        "rating": 3,
+        "comment": "not good"
+      },
+      {
+        "rating": 3,
+        "comment": "satisfied"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Acre Camperdown Toilet",
+    "description": "Restoring the toilet as a place of sanctuary was a way of loving myself, of caring for the person so many others relied upon to stay healthy and well balanced.",
+    "image": "../img/male_toilet_2.jpg",
+    "accessibility":true,
+    "wifi":false,
+    "shower":false,
+    "disabled": false,
+    "longitude": "151.17524",
+    "latitude": "-33.88878",
+    "gender": "M",
+    "reviews": [
+      {
+        "rating": 5,
+        "comment": "nice toilet!"
+      },
+      {
+        "rating": 4,
+        "comment": "just so so"
+      },
+      {
+        "rating": 3,
+        "comment": "Not Good"
+      },
+      {
+        "rating": 1,
+        "comment": "Too dirty"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Quadrangle Building Tower Toilet",
+    "description": "The toilet was a celebration of white and chrome, with the lavender in the vase it was most welcoming to the senses.",
+    "image": "../img/male_toilet_3.jpg",
+    "accessibility":true,
+    "wifi":true,
+    "shower":true,
+    "disabled": false,
+    "longitude": "151.18880",
+    "latitude": "-33.88587",
+    "gender": "U",
+    "reviews": [
+      {
+        "rating": 5,
+        "comment": "A very very nice toilet!"
+      },
+      {
+        "rating": 4,
+        "comment": "A very very nice toilet!!!!!!!!!!!!!!!!"
+      },
+      {
+        "rating": 5,
+        "comment": "A very very nice toilet!!!!!!!!!!!!!!!!!!!!!!!!!"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Eastern Avenue Toilet",
+    "description": "The toilet was a place of washing, of nurturing our sanity with the sensation of warm water and aromatic soaps. For the body must feel loved and cared for, for then it feeds back these messages to the brain and begins to set up a positive cycle of wellness.",
+    "image": "../img/male_toilet_4.jpg",
+    "accessibility":false,
+    "wifi":true,
+    "shower":false,
+    "disabled": false,
+    "longitude": "151.19030",
+    "latitude": "-33.88746",
+    "gender": "U",
+    "reviews": [
+      {
+        "rating": 4,
+        "comment": "Clean"
+      },
+      {
+        "rating": 2,
+        "comment": "need to repair the stool"
+      },
+      {
+        "rating": 2,
+        "comment": "the worst toilet ever went"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Law Building Toilet",
+    "description": "The toilet was my cocoon, my place for relaxation and self-care.",
+    "image": "../img/female_toilet_1.jpg",
+    "accessibility":true,
+    "wifi":true,
+    "shower":true,
+    "disabled": false,
+    "longitude": "151.19069",
+    "latitude": "-33.88746",
+    "gender": "U",
+    "reviews": [
+      {
+        "rating": 5,
+        "comment": "A nice toilet!"
+      },
+      {
+        "rating": 4,
+        "comment": "not bad"
+      },
+      {
+        "rating": 5,
+        "comment": "good"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Seymour Center Toilet",
+    "description": "The toilet in pensive mood can be the poets throne.",
+    "image": "../img/female_toilet_2.jpg",
+    "accessibility":true,
+    "wifi":true,
+    "shower":false,
+    "disabled": false,
+    "longitude": "151.19501",
+    "latitude": "-33.88629",
+    "gender": "U",
+    "reviews": [
+      {
+        "rating": 5,
+        "comment": "Clean Environment"
+      },
+      {
+        "rating": 3,
+        "comment": "Not so good"
+      },
+      {
+        "rating": 5,
+        "comment": "Clean"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "MereWhether Building Toilet",
+    "description": "The toilet was clean, white in a white room, with the fragrance of summer meadows.",
+    "image": "../img/female_toilet_3.jpg",
+    "accessibility":true,
+    "wifi":true,
+    "shower":true,
+    "disabled": false,
+    "longitude": "151.19040",
+    "latitude": "-33.88958",
+    "gender": "U",
+    "reviews": [
+      {
+        "rating": 5,
+        "comment": "A very very nice toilet!"
+      },
+      {
+        "rating": 4,
+        "comment": "need more facilities"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Arena Sports Center Toilet",
+    "description": "The toilet could be the embodiment of a bouquet of roses, or the devil's underpants, there are moods that come when either will do, when one is willing to forgo the elegance.",
+    "image": "../img/female_toilet_4.jpg",
+    "accessibility":true,
+    "wifi":false,
+    "shower":true,
+    "disabled": false,
+    "longitude": "151.18710",
+    "latitude": "-33.88859",
+    "gender": "F",
+    "reviews": [
+      {
+        "rating": 2,
+        "comment": "Not so good"
+      }
+    ]
+  }
+]

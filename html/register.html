@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <link href="../css/admin_register.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="wrapper" class="center">
+    <h1>Sign Up</h1>
+
+    <div class="userAvatar">
+        <img width="180px" height="180px" src="../img/adminUser.png" alt="admin">
+    </div>
+
+    <form action="#" id="loginForm" method="post">
+        <table>
+            <tr>
+                <td class="right"><label for="email" class="inputLabel">Email: </label></td>
+                <td><input id="email" placeholder="Email" type="email"/></td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td class="right"><label for="pwd" class="inputLabel">Password: </label></td>
+                <td><input id="pwd" placeholder="Password" type="password"/></td>
+            </tr>
+            <tr></tr>
+
+            <tr>
+                <td class="right"><label for="confirmPwd" class="inputLabel">Confirm: </label></td>
+                <td><input id="confirmPwd" placeholder="Password" type="password"/></td>
+            </tr>
+        </table>
+        <p id="error"></p>
+        <div><button class="button" onclick="Register()" type="button">Submit</button></div>
+    </form>
+
+    <div class="signUp">
+        <a href="login.html">Log in</a>
+        <br>
+        <a target="_blank" href="privacy_policy.html">Privacy Policy</a>
+    </div>
+
+</div>
+
+
+<script src="../js/admin_register.js"></script>
+<script src="../js/md5.js"></script>
+</body>
+</html>
